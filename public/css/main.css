@@ -8,6 +8,7 @@ html{
 }
 body{
   height: auto;
+  margin: 0px;
 }
 #content_container{
   height: 100%;
