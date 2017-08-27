@@ -1,10 +1,11 @@
 html{
   margin: 0px;
   padding: 0px;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir','Noto Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: auto;
+  font-weight: normal;
 }
 body{
   height: auto;
