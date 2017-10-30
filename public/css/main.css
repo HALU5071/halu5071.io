@@ -1,170 +1,201 @@
-html{
+html {
+  background-color: rgb(243, 245, 248);
+  font-family: 'Avenir','Roboto','Noto Sans', sans-serif;
+
+  width: 100%;
+  height: 100%;
+
   margin: 0px;
   padding: 0px;
-  font-family: 'Avenir','Noto Sans', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: auto;
-  font-weight: normal;
 }
-body{
-  height: auto;
+body {
+  width: 100%;
+  height: 100%;
   margin: 0px;
-}
-#content_container{
-  height: 100%;
-  background: #424242;
+  padding: 0px;
 }
 
-/*Githubリボン*/
-#forkongithub a{
-  background:#000;
-  color:#fff;
-  text-decoration:none;
-  font-family:arial,sans-serif;
-  text-align:center;
-  font-weight:bold;
-  padding:5px 40px;
-  font-size:1rem;
-  line-height:2rem;
-  position:relative;
-  transition:0.5s;
-}
-#forkongithub a:hover{
-  background:#c11;
-  color:#fff;
-}
-#forkongithub a::before,#forkongithub a::after{
-  content:"";
-  width:100%;
-  display:block;
-  position:absolute;
-  top:1px;
-  left:0;
-  height:1px;
-  background:#fff;
-}
-#forkongithub a::after{
-  bottom:1px;
-  top:auto
-}
-@media screen and (min-width:800px){
-  #forkongithub{
-    position:absolute;
-    display:block;
-    top:0;
-    right:0;
-    width:200px;
-    overflow:hidden;
-    height:200px;
-    z-index:9999;
-  }
-  #forkongithub a{
-    width:200px;
-    position:absolute;
-    top:60px;
-    right:-60px;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
-  }
-}
 
-/*ここからメインコンテンツのCSS*/
-/*ヘッダー部分*/
-.main_content_container{
+/*
+* MainContent
+*
+*
+*/
+#main_content_container {
   width: 100%;
   height: 100%;
-  min-height: 1080px;
-}
-.main_content_wrapper{
-  width: 100%;
-  height: 100%;
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.cover_info_wrapper{
-  width: 100%;
-  height: auto;
+#horii_image_container {
+  width: 240px;
+  height: 240px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  background: #424242;
-  z-index: 2;
+  padding-top: 144px
 }
-.cover_image{
-  width: 300px;
-  height: 300px;
-  display: block;
+
+#horii_image {
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
   border-radius: 50%;
   border: solid 4px #fff;
 }
-.icon_wrapper{
-  width: 120px;
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Abel','Noto Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+#my_name {
+  margin-top: 8px;
+}
+#motto {
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Kite One', 'Abel','Noto Sans', cursive;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin-bottom: 144px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Abel','Noto Sans', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 144px;
+  margin-top: 0px;
+}
+
+.image-list-container {
+  display: flex;
+  flex-direction: row;
+  width: 192px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+}
+
+.image-list-item {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+#arrow{
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(135deg);
+}
+
+/**
+*  About
+*
+*
+*/
+#about_content_container {
+  width: 864px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.sns_icon{
-  margin: 12px;
-}
-h1{
-  font-size: 72px;
-  color: #fff;
-  text-align: center;
-  margin: 0px;
-}
-h2{
-  font-size: 32px;
-  color: #EEEEEE;
-  text-align: center;
-  margin: 0px;
-}
-#my_name{
-  font-family: 'Pacifico', cursive;
+.about-description {
+  font-size: 24px;
+  font-family: 'Noto Sans';
+  color: #616161;
 }
 
-@media screen and (max-width: 480px) {
-  .main_content_container{
-    width: 100%;
-    height: 100%;
-    min-height: 720px;
-  }
-  .cover_image_wrapper{
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 160px;
-    padding-bottom: 100px;
-  }
-  .cover_image{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 50%;
-    border: solid 4px #fff;
-  }
-  h1{
-    font-size: 40px;
-    color: #fff;
-    text-align: center;
-    margin: 0px;
-  }
-  h2{
-    font-size: 24px;
-    color: #EEEEEE;
-    text-align: center;
-    margin: 0px;
-  }
+/**
+*  Contact Content
+*
+*
+*/
+#contact_content_container {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+#contact_content_wrapper {
+  width: 864px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-container {
+  padding-top: 104px;
+}
+.section-title {
+  font-size: 72px;
+  text-align: left;
+  font-family: 'Abel','Noto Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  color: #424242;
+}
+.description-container {
+  width: 64%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #424242;
+  margin-bottom: 144px;
+}
+.contact-description {
+  font-size: 24px;
+  font-family: 'Noto Sans'
+  color: #616161;
+}
+#contact_container {
+  display: flex;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+  width: 100%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.image-list-container {
+  width: 180px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.contact-list-item {
+  width: 180px;
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #212121
+}
+.contact-list-item-icon {
+  display: block;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.contact-list-item-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 0px;
+  margin-bottom: 16px;
+  font-family: 'Abel'
 }
