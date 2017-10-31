@@ -199,6 +199,7 @@ body {
   }
   .title-container {
     padding-top: 104px;
+    padding-bottom: -104px;
   }
   .description-container {
     width: 64%;
@@ -217,8 +218,6 @@ body {
     -webkit-justify-content: center; /* Safari */
     justify-content:         center;
     width: 100%;
-    margin-left: 8px;
-    margin-right: 8px;
   }
   .image-list-container {
     width: 96px;
