@@ -117,7 +117,7 @@ body {
   *
   */
   .description {
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Noto Sans';
     color: #616161;
   }
@@ -167,7 +167,34 @@ body {
     margin-right: auto;
     background-color: #f9fffe;
   }
-
+  .skills-container {
+    display: flex;
+    -webkit-justify-content: center; /* Safari */
+    justify-content:         center;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .skills-list-item-icon {
+    display: block;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    margin: 0px;
+    font-size: 32px;
+    font-family: 'Abel','Noto Sans', sans-serif;
+    color: #424242;
+    margin-bottom: 16px;
+  }
+  #lang {
+    margin-bottom: 64px;
+  }
   /**
   *  works
   *
@@ -220,13 +247,14 @@ body {
     margin-right: 8px;
   }
   .image-list-container {
-    width: 180px;
+    width: auto;
+    min-width: 180px;
     margin-right: 16px;
     margin-left: 16px;
+    margin-bottom: 0px;
   }
   .contact-list-item {
-    width: 180px;
-    height: auto;
+    min-width: 180px;
     background: #fff;
     border-radius: 8px;
     text-decoration: none;
@@ -234,7 +262,7 @@ body {
   }
   .contact-list-item-icon {
     display: block;
-    width: 120px;
+    width: 102px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
