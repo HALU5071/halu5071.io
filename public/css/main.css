@@ -67,17 +67,35 @@ body {
     font-family: 'Kite One', 'Abel','Noto Sans', cursive;
     font-weight: 900;
     letter-spacing: 0px;
+    margin-top: 96px;
     margin-bottom: 144px;
     color: #fff;
   }
+  #link_container {
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+  }
 
+  #github_img {
+    line-height: 48px;
+  }
+  #twitter_img {
+    display: inline-block;
+    line-height: 48px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 8px;
+  }
   h2 {
     font-size: 24px;
     text-align: center;
     font-family: 'Abel','Noto Sans', sans-serif;
     font-weight: 100;
     color: #fff;
-    margin-bottom: 144px;
     margin-top: 0px;
   }
 
