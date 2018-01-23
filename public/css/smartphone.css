@@ -32,8 +32,8 @@ body {
   }
 
   #horii_image_container {
-    width: 240px;
-    height: 240px;
+    width: 204px;
+    height: 204px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 96px
@@ -42,24 +42,24 @@ body {
   #horii_image {
     margin-left: auto;
     margin-right: auto;
-    width: 232px;
-    height: 232px;
+    width: 196px;
+    height: 196px;
     border-radius: 50%;
     border: solid 4px #fff;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 28px;
     text-align: center;
     font-family: 'Abel','Noto Sans', sans-serif;
     font-weight: 900;
     letter-spacing: 4px;
-    margin-top: 0px;
+    margin-top: 32px;
     margin-bottom: 0px;
     color: #fff;
   }
   #my_name {
-    margin-top: 8px;
+    margin-top: 32px;
   }
   #motto {
     font-size: 16px;
@@ -68,12 +68,29 @@ body {
     font-weight: 900;
     letter-spacing: 0px;
     margin-top: 64px;
-    margin-bottom: 36px;
+    margin-bottom: 0px;
     color: #fff;
   }
 
+  #link_container {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #github_img {
+    width: 32px;
+  }
+
+  #twitter_img {
+    width: 32px;
+    padding-top: 2px;
+  }
+
   h2 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Abel','Noto Sans', sans-serif;
     font-weight: 100;

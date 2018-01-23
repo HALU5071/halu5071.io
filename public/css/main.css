@@ -81,9 +81,11 @@ body {
   }
 
   #github_img {
+    width: 48px;
     line-height: 48px;
   }
   #twitter_img {
+    width: 48px;
     display: inline-block;
     line-height: 48px;
     margin-top: auto;
